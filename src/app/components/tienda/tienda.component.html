@@ -1,0 +1,40 @@
+<div class="col-lg-12" [@fadeIn]>
+    <a class="btn-activo btn btn-success"
+        [@marcar]="status"
+        (click)="cambiarEstado()">
+        {{status}}
+    </a>
+
+    <hr>
+    <h4>Animaciones CSS3</h4>
+    <a class="btn-transiciones">Transiciones</a>
+    <div class="caja-animada"></div>
+
+    <hr/>
+    <h4>Utilizar JQuery dentro de Angular</h4>
+    <button id="btnjq">Mostrar textp</button>
+    <p id="textojq" class="alert alert-warning">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
+    </p>
+    <simple-tiny
+                [elementId]="'descripcion-tienda'"
+                (onEditorKeyup)="textoRichEditor($event)"
+                >
+    </simple-tiny>
+    <hr/>
+    <h1>{{titulo}}</h1>
+    <ul>
+        <li>Camiseta rosa</li>
+        <li>Gorra negra</li>
+    </ul>
+
+    <input type="text" [(ngModel)]="nombre"/>
+
+    <p>
+        This is the name: {{nombre}}
+    </p>
+
+    <parques [nombreTienda]="nombre"
+            (pasameLosDatos)="verDatosParque($event)"
+    ></parques>
+</div>

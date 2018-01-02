@@ -1,0 +1,67 @@
+.navigation.col-lg-12{
+    margin-top: 11px;
+}
+
+.jumbotron{
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #ccc;
+}
+
+.navbar-nav .active{
+    border-bottom: 3px solid orange;
+}
+
+.btn-transiciones{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid greenyellow;
+    transition:background-color 1s, border-radius 2s;
+    display: inline-block;
+}
+
+.btn-transiciones:hover{
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #ccc;
+    border: 1px solid greenyellow;
+}
+
+.caja-animada{
+    margin-top: 15px;
+    background-color: green;
+    border: 5px solid #ccc;
+    width: 200px;
+    height: 200px;
+    /*
+    animation-name: deslizamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    */
+}
+
+@keyframes deslizamiento{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 400px;
+        background-color: red;
+    }
+    100%{
+        margin-left: 0px;
+        background-color: yellow;
+    }
+}
+
+@keyframes deslizamiento1{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 400px;
+        background-color: red;
+    }
+}
